@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="bg-pink-400 text-5xl font-bold text-blue-800 text-center p-12 ">Geometry Genius</h1>
+    </header>
+    <main class="bg-pink-200">
+        <section class="flex flex-col md:flex-row lg:flex-row mx-auto px-5">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-4">
+                <!-- Triangle Card -->
+                <div class="card w-60 lg:w-96  bg-base-100 shadow-xl">
+                    <figure class="p-2"><img src="/images/triangle.png" alt="Triangle" /></figure>
+                    <div class="card-body p-10 ">
+                      <h2 class="text-center font-bold text-3xl">Triangle</h2>
+                      <p class="text-center">Area: 0.5 x b x h</p>
+                      <p class="text-center">
+                        <input type="text" placeholder="base" id="triangle-base" class="w-20 p-2 rounded-md bg-gray-100">
+                        <span class="mr-4">cm</span>
+                        <input type="text" placeholder="height" id="triangle-height" class="w-20 p-2 rounded-md bg-gray-100">
+                        <span class="mr-4">cm</span>
+                      </p>
+                      <p class="font-semibold text-center">Area = <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Rectangle Card -->
+                <div class="card w-60 lg:w-96  bg-base-100 shadow-xl">
+                    <figure class="p-2"><img src="/images/rectangle.png" alt="Rectangle" /></figure>
+                    <div class="card-body p-10 ">
+                      <h2 class="text-center font-bold text-3xl">Rectangle</h2>
+                      <p class="text-center">Area:  w x l</p>
+                      <p class="text-center">
+                        <input type="text" placeholder="width" id="rectangle-width" class="w-20 p-2 rounded-md bg-gray-100">
+                        <span class="mr-4">cm</span>
+                        <input type="text" placeholder="length" id="rectangle-length" class="w-20 p-2 rounded-md bg-gray-100">
+                        <span class="mr-4">cm</span>
+                      </p>
+                      <p class="font-semibold text-center">Area = <span id="rectangle-area"></span><span>cm<sup>2</sup></span></p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Parallelogram Card -->
+                <div class="card w-60 lg:w-96  bg-base-100 shadow-xl">
+                    <figure class="p-2"><img src="/images/parallelogram.png" alt="Parallelogram" /></figure>
+                    <div class="card-body ">
+                      <h2 class="text-center font-bold text-3xl">Parallelogram</h2>
+                      <p class="text-center">Area:  b x h</p>
+                      <p class="text-center">
+                        <input type="text" placeholder="base" id="p-base" class="w-20 p-2 rounded-md bg-gray-100">
+                        <span class="mr-4">cm</span>
+                        <input type="text" placeholder="height" id="p-height" class="w-20 p-2 rounded-md bg-gray-100">
+                        <span class="mr-4">cm</span>
+                      </p>
+                      <p class="font-semibold text-center">Area = <span id="p-area"></span><span>cm<sup>2</sup></span></p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="px-5 my-4">
+                <h2 class="text-3xl font-bold underline">Area Calculation</h2>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
