@@ -12,3 +12,18 @@ function calculateTriangleArea() {
 
     addCalculationEntry("Triangele", triangleAreaFormula);
 }
+
+function calculateRectangleArea() {
+    const rectangleWidth = getInputFieldValue("rectangle-width");
+    const rectangleLength = getInputFieldValue("rectangle-length");
+    if(isNaN(rectangleWidth) || isNaN(rectangleLength)){
+        alert("Please Insert Number");
+        return;
+    }
+    const rectangleAreaFormula = rectangleWidth * rectangleLength;
+
+    setElementText("rectangle-area", rectangleAreaFormula);
+
+    addCalculationEntry("Rectangle", rectangleAreaFormula);
+
+}
