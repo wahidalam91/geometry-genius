@@ -42,3 +42,50 @@ function calculateParallelogramArea() {
     addCalculationEntry("Parallelogram", parallelogramAreaFormula);
 
 }
+
+function calculateRhomusArea() {
+    const diagonal1 = getInputFieldValue("diagonal-1");
+    const diagonal2 = getInputFieldValue("diagonal-2");
+    if(isNaN(diagonal1) || isNaN(diagonal2)){
+        alert("Please Insert Number");
+        return; 
+    }
+    const rhombusAreaFormula = 0.5 * diagonal1 * diagonal2;
+
+    setElementText("rhombus-area", rhombusAreaFormula);
+
+    addCalculationEntry("Rhombus", rhombusAreaFormula);
+
+
+}
+
+function calculatePentagonArea() {
+    const pentagonPerimeter = getInputFieldValue("perimeter");
+    const pentagonApothem = getInputFieldValue("apothem");
+    if(isNaN(pentagonPerimeter) || isNaN(pentagonApothem)){
+        alert("Please Insert Number");
+        return; 
+    }
+    const pentagonAreaFormula = 0.5 * pentagonPerimeter * pentagonApothem;
+
+    setElementText("pentagon-area", pentagonAreaFormula);
+
+    addCalculationEntry("Pentagon", pentagonAreaFormula);
+
+
+}
+
+function calculateEllipseArea() {
+    const aAxis = getInputFieldValue("a-axis");
+    const bAxis = getInputFieldValue("b-axis");
+    if(isNaN(aAxis) || isNaN(bAxis)){
+        alert("Please Insert Number");
+        return;
+    }
+
+    const ellipseAreaFormula = (Math.PI * aAxis * bAxis).toFixed(2);
+
+    setElementText("ellipse-area", ellipseAreaFormula);
+
+    addCalculationEntry("Ellipse", ellipseAreaFormula);
+}

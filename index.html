@@ -68,6 +68,60 @@
                       </div>
                     </div>
                 </div>
+                <!-- Rhombus Card -->
+                <div class="card w-60 lg:w-96  bg-base-100 shadow-xl">
+                    <figure class="p-2"><img src="/images/rhombus.png" alt="Rhombus" /></figure>
+                    <div class="card-body p-10 ">
+                      <h2 class="text-center font-bold text-3xl">Rhombus</h2>
+                      <p class="text-center">Area: 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                      <p class="text-center">
+                        <input type="text" placeholder="diagonal-1" id="diagonal-1" class="w-20 p-2 rounded-md bg-gray-100">
+                        <span class="mr-4">cm</span>
+                        <input type="text" placeholder="diagonal-2" id="diagonal-2" class="w-20 p-2 rounded-md bg-gray-100">
+                        <span class="mr-4">cm</span>
+                      </p>
+                      <p class="font-semibold text-center">Area = <span id="rhombus-area"></span><span>cm<sup>2</sup></span></p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary w-full"  onclick="calculateRhomusArea()">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Pentagon Card -->
+                <div class="card w-60 lg:w-96  bg-base-100 shadow-xl">
+                    <figure class="p-2"><img src="/images/pentagon.png" alt="Pentagon" /></figure>
+                    <div class="card-body p-10 ">
+                      <h2 class="text-center font-bold text-3xl">Pentagon</h2>
+                      <p class="text-center">Area:  0.5 x p x a</p>
+                      <p class="text-center">
+                        <input type="text" placeholder="perimeter" id="perimeter" class="w-20 p-2 rounded-md bg-gray-100">
+                        <span class="mr-4">cm</span>
+                        <input type="text" placeholder="apothem" id="apothem" class="w-20 p-2 rounded-md bg-gray-100">
+                        <span class="mr-4">cm</span>
+                      </p>
+                      <p class="font-semibold text-center">Area = <span id="pentagon-area"></span><span>cm<sup>2</sup></span></p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary w-full" onclick="calculatePentagonArea()">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Ellipse Card -->
+                <div class="card w-60 lg:w-96  bg-base-100 shadow-xl">
+                    <figure class="p-2"><img src="/images/ellipse.png" alt="Ellipse" /></figure>
+                    <div class="card-body ">
+                      <h2 class="text-center font-bold text-3xl">Ellipse</h2>
+                      <p class="text-center">Area: πab </p>
+                      <p class="text-center">
+                        <input type="text" placeholder="a-axis" id="a-axis" class="w-20 p-2 rounded-md bg-gray-100">
+                        <span class="mr-4">cm</span>
+                        <input type="text" placeholder="b-axis" id="b-axis" class="w-20 p-2 rounded-md bg-gray-100">
+                        <span class="mr-4">cm</span>
+                      </p>
+                      <p class="font-semibold text-center">Area = <span id="ellipse-area"></span><span>cm<sup>2</sup></span></p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary w-full" onclick="calculateEllipseArea()">Calculate</button>
+                      </div>
+                    </div>
+                </div>
                 
 
             </div>
