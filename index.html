@@ -28,7 +28,7 @@
                       </p>
                       <p class="font-semibold text-center">Area = <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
                       <div class="card-actions">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button class="btn btn-primary w-full"  onclick="calculateTriangleArea()">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -73,8 +73,15 @@
             </div>
             <div class="px-5 my-4">
                 <h2 class="text-3xl font-bold underline">Area Calculation</h2>
+                <div id="calculation-entry">
+
+                </div>
             </div>
+
         </section>
     </main>
+
+    <script src="./js/utilities.js"></script>
+    <script src="./js/area-calculator.js"></script>
 </body>
 </html>
