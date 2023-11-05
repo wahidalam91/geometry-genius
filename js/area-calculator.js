@@ -27,3 +27,18 @@ function calculateRectangleArea() {
     addCalculationEntry("Rectangle", rectangleAreaFormula);
 
 }
+
+function calculateParallelogramArea() {
+    const paraBase = getInputFieldValue("p-base");
+    const paraHeight = getInputFieldValue("p-height");
+    if(isNaN(paraBase) || isNaN(paraHeight)){
+        alert("Please Insert Number");
+        return;
+    }
+    const parallelogramAreaFormula = paraBase * paraHeight;
+
+    setElementText("p-area", parallelogramAreaFormula);
+
+    addCalculationEntry("Parallelogram", parallelogramAreaFormula);
+
+}
